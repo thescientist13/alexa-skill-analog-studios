@@ -1,0 +1,16 @@
+{
+  "name": "alexa-skill-analog-studios",
+  "version": "0.1.0",
+  "description": "An Alexa skill for getting information from Analog Studios website",
+  "main": "src/index.js",
+  "repository": "git@github.com:thescientist13/alexa-skill-analog-studios.git",
+  "author": "Owen Buckley <owen.buckley@analogstudios.net>",
+  "license": "MIT",
+  "scripts": {
+    "build": "eslint **/*.js && jsonlint **/*.json"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "jsonlint": "^1.6.2"
+  }
+}
