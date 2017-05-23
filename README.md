@@ -1,5 +1,5 @@
 # alexa-skill-analog-studios
-An Alexa skill for getting information from the Analog Studios website
+An Alexa skill for getting information from the Analog Studios [website](http://www.analogstudios.net).
 
 ## Links / References
 
