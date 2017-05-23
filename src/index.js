@@ -1,3 +1,4 @@
+// this require is assumed of the Lambda NodeJS runtime
 const Alexa = require('alexa-sdk');
 
 const APP_ID = '';
@@ -13,14 +14,6 @@ function getName() {
 
   return name;
 }
-
-exports.handler = function(event, context) {
-  let alexa = Alexa.handler(event, context);
-
-  alexa.APP_ID = APP_ID;
-  alexa.registerHandlers(handlers);
-  alexa.execute();
-};
 
 let handlers = {
   'LaunchRequest': function () {
@@ -50,4 +43,12 @@ let handlers = {
   'AMAZON.StopIntent': function () {
     this.emit(':tell', 'Goodbye!');
   }
+};
+
+exports.handler = function(event, context) {
+  let alexa = Alexa.handler(event, context);
+
+  alexa.APP_ID = APP_ID;
+  alexa.registerHandlers(handlers);
+  alexa.execute();
 };
